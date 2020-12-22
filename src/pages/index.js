@@ -14,7 +14,7 @@ export default function Home() {
           <h4>Tips from a psychologist with psoriasis</h4>
         </div>
         <button>
-          <Link to="#">View Posts</Link>
+          <Link to="/posts">View Posts</Link>
         </button>
       </div>
     </Layout>

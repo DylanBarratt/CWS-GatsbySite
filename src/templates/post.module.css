@@ -1,0 +1,29 @@
+.postMain {
+  margin-top: 7.5%;
+  padding-bottom: 10vh;
+}
+
+.title h1 {
+  font-size: 48px;
+  margin: 0;
+}
+.title h2 {
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.postMain img {
+  max-width: 100%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.postMain p * {
+  color: black !important;
+}
