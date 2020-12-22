@@ -21,9 +21,6 @@ export default function Header() {
         <li>
           <Link to="/posts">Posts</Link>
         </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
       </ul>
     </div>
   )

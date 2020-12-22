@@ -85,6 +85,10 @@
     grid-template-rows: 50% 50%;
   }
 
+  .one button {
+    align-self: baseline;
+  }
+
   .one h1 {
     font-size: 75px;
   }
