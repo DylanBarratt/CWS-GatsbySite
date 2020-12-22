@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+html {
+  background-color: white;
+
+  font-family: "Raleway", sans-serif;
+  color: var(--main-color);
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  margin: 10px 0 0 0;
+}
+
+a:hover {
+  color: var(--main-dark);
+}
+
+:root {
+  --main-color: #4a486b;
+  --main-dark: #282649;
+  --main-complimentary: #79aab1;
+}

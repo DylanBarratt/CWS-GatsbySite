@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+
+.one {
+  display: grid;
+  grid-template-rows: 75% 25%;
+  place-items: center;
+  height: 75vh;
+  min-height: 500px;
+}
+
+.one h1 {
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0px;
+  text-align: center;
+}
+
+.one h4 {
+  font-size: 25px;
+  font-weight: 300;
+  animation: appear 0.75s 1;
+  margin: 0px;
+  text-align: center;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.one button {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 60px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.one button a {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.one button a:after {
+  font-size: 20px;
+  content: "\1F449";
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.one button:hover a {
+  padding-right: 30px;
+}
+
+.one button:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+.one button a {
+  color: white;
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.one button:hover {
+  background-color: var(--main-dark);
+}
+
+@media only screen and (max-width: 900px) {
+  .one {
+    grid-template-rows: 50% 50%;
+  }
+
+  .one h1 {
+    font-size: 75px;
+  }
+  .one h4 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .one h1 {
+    font-size: 60px;
+  }
+  .one h4 {
+    font-size: 12px;
+  }
+
+  .one button {
+    width: 150px;
+  }
+
+  .one button a {
+    font-size: 18px;
+  }
+}
