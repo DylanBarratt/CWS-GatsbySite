@@ -1,0 +1,44 @@
+.postCardGrid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.postCardBody {
+  text-decoration: none;
+}
+
+.postCard {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.postCard a {
+  text-decoration: none;
+}
+
+.postCard h2 {
+  margin-bottom: 0;
+  color: var(--main-color);
+}
+
+.postCard h3 {
+  margin-top: 0;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.postCard img {
+  width: 80%;
+}
+
+#title {
+  font-size: 48px;
+  text-align: center;
+}
