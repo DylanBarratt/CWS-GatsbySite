@@ -9,8 +9,12 @@ require("dotenv").config({
 })
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Coping With Psoriasis`,
+    siteUrl: "https://www.copingwithpsoriasis.com",
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
