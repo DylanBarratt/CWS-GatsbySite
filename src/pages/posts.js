@@ -5,6 +5,15 @@ import Layout from "../components/layout"
 
 import Style from "./posts.module.css"
 
+function PreviewImage(url) {
+  console.log(url)
+  if (url !== undefined) {
+    return <img src={url} alt="post preview" />
+  } else {
+    return <img src="Logo.png" alt="post preview" />
+  }
+}
+
 const PostIndex = ({ data }) => (
   <Layout>
     <div>
@@ -19,7 +28,6 @@ const PostIndex = ({ data }) => (
           <Link to={`/posts/${node.slug}`} className={Style.postCardBody}>
             <div className={Style.postCard} key={index}>
               <Link to={`/posts/${node.slug}`}>
-                <img src={node.previewImage.file.url} alt="post preview" />
                 <h2>{node.title}</h2>
                 <h3>{node.dateCreated}</h3>
               </Link>

@@ -29,7 +29,8 @@ function PreviewVideo(data) {
 }
 
 function Preview(data) {
-  if (data.data.post.videoUrl == undefined) {
+  console.log(data.data.post.videoUrl)
+  if (data.data.post.videoUrl === null) {
     return <PreviewImage data={data} />
   } else {
     return <PreviewVideo data={data} />
